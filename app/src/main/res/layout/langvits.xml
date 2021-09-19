@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_height="110dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Add image view, We will not set any data here.-->
+
+        <!--Text view for showing the language name-->
+        <TextView
+            android:id="@+id/tv_lang_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Text View for showing the exp-->
+        <TextView
+            android:id="@+id/tv_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/tv_lang_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_lang_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
